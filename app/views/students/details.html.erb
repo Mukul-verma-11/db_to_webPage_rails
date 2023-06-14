@@ -1,5 +1,20 @@
 <h1>DETAILS</h1>
 
-<p> <strong>Name</strong> : <%= @student.name %> </p>
-<p> <strong>Roll number</strong> : <%= @student.roll_number %> </p>
-<p> <strong>Branch</strong> : <%= @student.branch %> </p>
+<table>
+<thead>
+<tr>
+    <th>
+        name
+    </th>
+</tr>
+</thead>
+
+<tbody>
+<% @student.each do |student| %>
+<tr>
+    <td><%= student.name %> </td>
+</tr>
+<% end %>
+</tbody>
+
+</table>

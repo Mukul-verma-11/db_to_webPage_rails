@@ -1,0 +1,16 @@
+Enter new student
+
+<%=  form_with scope: :student, url: students_path ,local: true do |form|    %>
+
+<p>
+<%= form.label :name %> <br>
+<%= form.text_field :name %>
+</p>  
+<p>
+<%= form.label :roll_number %> <br>
+<%= form.number_field :roll_number %>
+</p>
+
+
+<%= form.submit  %>
+<% end %>
